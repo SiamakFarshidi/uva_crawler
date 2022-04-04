@@ -27,3 +27,11 @@ For example:
 
     "https:\\/\\/www.icpsr.umich.edu\\/web\\/HMCA\\/studies\\/\\d{5}$"
 
+
+## "render_html":
+ Most modern websites contain JavaScript, making them dynamic and interactive. If you try to crawl a website built with Angular, you will not get very far (literally). In order to 'see' the HTML of a web page (and the content and links within it), the crawler needs to process all the code on the page and render the content. Rendering is a process carried out by the browser, taking the code (HTML, CSS, JS, etc...) and translating this into the visual representation of the web page you see on the screen. If you set "render_html" equal to "true", the Chrome driver will be used to render the crawled content first, and then the data extraction process will be performed.
+ 
+ For example: 
+
+    "render_html": false,
+
