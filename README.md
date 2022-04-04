@@ -18,14 +18,14 @@ It should contain rules based on regular expressions to indicate patterns in URL
 
 For example: 
 
-    "https:\\/\\/data.world\\/(.+?)\\/(.*?)*-(.*?)*-(.*?)$"
+    "permitted_urls_rules": [https:\\/\\/data.world\\/(.+?)\\/(.*?)*-(.*?)*-(.*?)$"]
 
 ## "denied_urls_rules":
 It should contain rules based on regular expressions to indicate patterns in URLs. The crawler employs such patterns to **avoid** extracting data from the matched URLs.
 
 For example: 
 
-    "https:\\/\\/www.icpsr.umich.edu\\/web\\/HMCA\\/studies\\/\\d{5}$"
+    "denied_urls_rules": ["https:\\/\\/www.icpsr.umich.edu\\/web\\/HMCA\\/studies\\/\\d{5}$"]
 
 
 ## "render_html":
@@ -50,4 +50,8 @@ This property should be set as " true " if you want to force the crawler to extr
     "keep_parameters_for_indexing": true
     
 ## "page_counter":
+This property can be used for the cases in which the web pages of a website should be crawled based on a page counter in their URLs.
 
+ For example: 
+
+    "page_counter": [https://catalog.data.gov/dataset?page={counter}]
