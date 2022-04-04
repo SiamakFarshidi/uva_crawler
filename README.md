@@ -18,4 +18,4 @@ It should contain rules based on regular expressions to indicate patterns in URL
 
 For example: 
 
-      "https:\\/\\/data.world\\/(.+?)\\/(.*?)*-(.*?)*-(.*?)$"
+    "https:\\/\\/data.world\\/(.+?)\\/(.*?)*-(.*?)*-(.*?)$"
