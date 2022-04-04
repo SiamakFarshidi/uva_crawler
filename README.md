@@ -19,3 +19,11 @@ It should contain rules based on regular expressions to indicate patterns in URL
 For example: 
 
     "https:\\/\\/data.world\\/(.+?)\\/(.*?)*-(.*?)*-(.*?)$"
+
+## "denied_urls_rules":
+It should contain rules based on regular expressions to indicate patterns in URLs. The crawler employs such patterns to **avoid** extracting data from the matched URLs.
+
+For example: 
+
+    "https:\\/\\/www.icpsr.umich.edu\\/web\\/HMCA\\/studies\\/\\d{5}$"
+
