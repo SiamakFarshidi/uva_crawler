@@ -42,3 +42,12 @@ If the target website uses URL parameters for insignificant page variations (for
  
     "keep_parameters": true
 
+## "keep_parameters_for_indexing":
+This property should be set as " true " if you want to force the crawler to extract data based on parameters and store original URLs (including query strings or parameters).
+
+ For example: 
+
+    "keep_parameters_for_indexing": true
+    
+## "page_counter":
+
