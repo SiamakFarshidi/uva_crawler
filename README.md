@@ -35,3 +35,10 @@ For example:
 
     "render_html": false,
 
+## "keep_parameters":
+If the target website uses URL parameters for insignificant page variations (for instance, color=red vs. color=green), or if it uses parameters that can show essentially the same content using different URLs (for example, example.com/shirts?style=polo,long-sleeve and example.com/shirts?style=polo&style=long-sleeve), the crawler might be crawling the website inefficiently. So, all such parameters will be eliminated by default. However, if you set "keep_parameters" equal to "true", query strings (parameters) of URLs would not be removed. 
+
+ For example: 
+ 
+    "keep_parameters": false,
+
