@@ -63,5 +63,14 @@ For example:
 
     "start_page_counter_from": 1,
 
+## "equal_crawled_features":
+This property indicates which metadata feature(s) should be used as the unique identifier to prevent duplicate indices. In most cases, the URL of a webpage can be considered the unique identifier. However, some websites use query strings or parameters to distinguish web contents and create web pages and their contents automatically.
+
+For example: 
+
+    "equal_crawled_features": [
+      "url"
+    ],
+
 
 
