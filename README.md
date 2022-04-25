@@ -55,3 +55,13 @@ This property can be used for the cases in which the web pages of a website shou
  For example: 
 
     "page_counter": [https://catalog.data.gov/dataset?page={counter}]
+
+## "start_page_counter_from":
+It indicates the starting point of the page counter. Typically, it should be an integer number greater than or equal to zero.
+
+For example: 
+
+    "start_page_counter_from": 1,
+
+
+
